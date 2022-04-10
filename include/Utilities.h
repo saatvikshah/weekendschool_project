@@ -2,6 +2,8 @@
 
 #include "CytronMakerSumo.h"
 
+// TODO: Keep only API visible here, move implementation details to a cpp or `Utilities_Impl.h` that can be `#include'd`
+
 // Constants
 
 int LEDPin = A4;
@@ -59,6 +61,7 @@ inline void moveForward(int units) {
  TurnConstant needs to be tuned based on motors + surface used.
  The smaller the angle, the higher the constant needed (eg. 6 for 45 degree,
  and 4.5 for 90 degree, so will need to setup a decaying mechanism?);
+  TODO: Ensure constants are setup for both robots and works for all problem solutions.
 **/
 
 inline void turnRight(int degrees) {

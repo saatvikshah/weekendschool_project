@@ -30,7 +30,7 @@ void loop() {
 
 ## Levels
 
-Please inform an organizer once you are done with any of the levels.
+Please inform an organizer once you are done with any of the levels. Solutions are to be written out in `projects/bravo/bravo.ino`.
 
 ### Level 1
 
