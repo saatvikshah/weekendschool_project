@@ -47,8 +47,8 @@ Please inform an organizer once you are done with any of the levels.
 
 ### Level 3
 
-- Ensure everything in Level 2 is complete and checked by an instructor.
-- Make squares that grow larger every time by 1 unit. i.e. Draw the first square 3 units long. The next square should be 4 units long. And so on.
+1. Ensure everything in Level 2 is complete and checked by an instructor.
+2. Make squares that grow larger every time by 1 unit. i.e. Draw the first square 3 units long. The next square should be 4 units long. And so on.
 
 ## Extra credit
 

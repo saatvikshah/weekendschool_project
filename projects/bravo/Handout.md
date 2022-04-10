@@ -47,8 +47,8 @@ Please inform an organizer once you are done with any of the levels.
 
 ### Level 3
 
-- Ensure everything in Level 2 is complete and checked by an instructor.
-- Once you have finished drawing 3 triangles, its time to hit rewind! Have the robot draw one more triangle but traversing the path it came from. (for example if you made a triangle by moving the robot clockwise, you need to go anticlockwise this time).
+1. Ensure everything in Level 2 is complete and checked by an instructor.
+2. Once you have finished drawing 3 triangles, its time to hit rewind! Have the robot draw one more triangle but traversing the path it came from. (for example if you made a triangle by moving the robot clockwise, you need to go anticlockwise this time).
 
 ## Extra credit
 
