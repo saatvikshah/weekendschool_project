@@ -65,8 +65,8 @@ inline void moveForward(int units) {
 **/
 
 inline void turnRight(int degrees) {
-    static constexpr float TurnConstant = 6.0;
-    static constexpr int TurnSpeed = 80;
+    static constexpr float TurnConstant = 5.5;
+    static constexpr int TurnSpeed = 50;
     static const int TurnDuration = TurnConstant * degrees;
     MakerSumo.turnRight(TurnSpeed);
     delay(milliseconds(TurnDuration));
@@ -74,8 +74,8 @@ inline void turnRight(int degrees) {
 }
 
 inline void turnLeft(int degrees) {
-    static constexpr float TurnConstant = 6.0;
-    static constexpr int TurnSpeed = 80;
+    static constexpr float TurnConstant = 5.5;
+    static constexpr int TurnSpeed = 50;
     static const int TurnDuration = TurnConstant * degrees;
     MakerSumo.turnLeft(TurnSpeed);
     delay(milliseconds(TurnDuration));
