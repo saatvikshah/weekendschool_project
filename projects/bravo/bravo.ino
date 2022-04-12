@@ -1,9 +1,13 @@
 #include "Utilities.h"
 
 void setup() {
-    // When you press "on", the code here will run once
+    // Enter setup code here
+}
+
+bool do_once() {
+    // Enter your code here
 }
 
 void loop() {
-    // The code here will keep running repeatedly after the `setup()` function completes    
+    static bool _ = do_once();
 }

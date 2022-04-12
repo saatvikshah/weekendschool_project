@@ -8,22 +8,16 @@ This challenge will involve drawing triangles with the robot with a mix of LEDs 
 - The concepts of variables, loops and branches should be clear. Below is a snippet you can refer to, covering all 3 concepts.
 
 ```cpp
-bool isLedOn;
-
-void setup() {
-    // When you press "on", the code here will run once
-    isLedOn = true;
-}
-
-void loop() {
-    // The code here will keep running repeatedly after the `setup()`
-    // So it is an implicit loop
-    if (isLedOn) {
-        turnLedOn();
-        isLedOn = false;
-    } else {
-        turnLedOff();
-        isLedOn = true;
+void function() {
+    bool isLedOn = false;
+    while(true) { // Loop as long as the condition is true;
+        if(isLedOn) {
+            turnLedOff();
+            isLedOn = false;
+        } else {
+            turnLedOn();
+            isLedON = true;
+        }
     }
 }
 ```

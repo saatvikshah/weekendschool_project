@@ -4,9 +4,6 @@
 - Draw M shape 3 times
 **/
 
-int count;
-int ShapeCount = 3;
-
 void drawM() {
     moveForward(3);
     turnRight(45);
@@ -19,13 +16,18 @@ void drawM() {
 
 void setup() {
     begin();
-    count = 1;
     delay(seconds(2));
 }
 
-void loop() {
-    if (count <= ShapeCount) {
+bool do_once() {
+    const int DRAW_COUNT = 3;
+    int count = 0;
+    while (count < DRAW_COUNT) {
         drawM();
         count = count + 1;
     }
+}
+
+void loop() {
+    static bool _ = do_once();
 }
