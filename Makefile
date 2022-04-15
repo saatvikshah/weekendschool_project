@@ -23,15 +23,10 @@ draw-m:
 	$(MAKE) 'CXXFLAGS=$(CXXFLAGS)' -C $(DRAW_M_DIR)
 	$(MAKE) 'CXXFLAGS=$(CXXFLAGS)' -C $(DRAW_M_DIR) upload
 
-project-alpha:
-	$(MAKE) 'CXXFLAGS=$(CXXFLAGS)' -C $(PROJECT_ALPHA_DIR) clean
-	$(MAKE) 'CXXFLAGS=$(CXXFLAGS)' -C $(PROJECT_ALPHA_DIR)
-	$(MAKE) 'CXXFLAGS=$(CXXFLAGS)' -C $(PROJECT_ALPHA_DIR) upload
-
-project-bravo:
-	$(MAKE) 'CXXFLAGS=$(CXXFLAGS)' -C $(PROJECT_BRAVO_DIR) clean
-	$(MAKE) 'CXXFLAGS=$(CXXFLAGS)' -C $(PROJECT_BRAVO_DIR)
-	$(MAKE) 'CXXFLAGS=$(CXXFLAGS)' -C $(PROJECT_BRAVO_DIR) upload
+project-%:
+	$(MAKE) 'CXXFLAGS=$(CXXFLAGS)' -C 'projects/$*' clean
+	$(MAKE) 'CXXFLAGS=$(CXXFLAGS)' -C 'projects/$*'
+	$(MAKE) 'CXXFLAGS=$(CXXFLAGS)' -C 'projects/$*' upload
 
 clean:
 	$(MAKE) 'CXXFLAGS=$(CXXFLAGS)' -C $(MUSICAL_LED_DIR) clean

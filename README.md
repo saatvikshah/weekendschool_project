@@ -9,7 +9,5 @@
 
 ## Pending
 
-- Add 2 more handouts for teams charlie/delta.
 - Check TODOs in `include/Utilities.h`.
-- Simplify the Makefile.
 - Add solutions to another branch (?).
