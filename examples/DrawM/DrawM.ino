@@ -6,7 +6,7 @@
 
 void drawM() {
     moveForward(3);
-    turnRight(45);
+    turnRight(135);
     moveForward(2);
     turnLeft(90);
     moveForward(2);
