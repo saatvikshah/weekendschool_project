@@ -1,11 +1,38 @@
 #include "Utilities.h"
 
 void setup() {
-    // Enter setup code here
+    begin();
+}
+
+void level_one() {
+    moveForward(4);
+    turnRight(135);
+    moveForward(4);
+    turnLeft(135);
+    moveForward(4);
+    marioMelody();
 }
 
 bool do_once() {
-    // Enter your code here
+    int counter = 0;
+    while (counter < 9) {
+        if (counter % 3 == 0) {
+            moveForward(4);
+            turnRight(135);
+            moveForward(4);
+            turnLeft(135);
+            moveForward(4);
+        }
+        if (counter % 2 == 0) {
+            moveForward(4);
+            turnRight(90);
+            moveForward(2);
+        }
+        if ((counter % 3 != 0) && (counter % 2 != 0)) {
+            turnLedOn();
+            turnLedOff();
+        }
+    }
 }
 
 void loop() {
