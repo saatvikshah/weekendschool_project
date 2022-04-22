@@ -42,6 +42,10 @@ inline int milliseconds(int value) {
     return value;
 }
 
+inline void waitSeconds(int value) {
+    delay(seconds(value));
+}
+
 inline void resetMotors() {
     MakerSumo.setMotorSpeed(MOTOR_L, 0);
     MakerSumo.setMotorSpeed(MOTOR_R, 0);
