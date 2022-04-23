@@ -1,6 +1,11 @@
+include Configuration.mk
 rootdir = $(realpath .)
 CXXFLAGS += -I$(rootdir)/include/
 CXXFLAGS += -fno-threadsafe-statics # Fix for https://github.com/bblanchon/ArduinoJson/issues/356#issuecomment-249209167
+ifdef TURN_CONSTANT
+	CXXFLAGS += "-DTURN_CONSTANT=${TURN_CONSTANT}"
+endif
+
 
 example-%:
 	$(MAKE) 'CXXFLAGS=$(CXXFLAGS)' -C 'examples/$*' clean

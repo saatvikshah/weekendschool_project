@@ -2,6 +2,10 @@
 
 #include "CytronMakerSumo.h"
 
+#ifndef TURN_CONSTANT
+    #error The "TURN_CONSTANT" must be set in the root level "Configuration.mk"
+#endif
+
 // TODO: Keep only API visible here, move implementation details to a cpp or `Utilities_Impl.h` that can be `#include'd`
 
 // Constants
@@ -69,7 +73,7 @@ inline void moveForward(int units) {
 **/
 
 inline void turnRight(int degrees) {
-    static constexpr float TurnConstant = 5.5;
+    static constexpr float TurnConstant = TURN_CONSTANT;
     static constexpr int TurnSpeed = 50;
     static const int TurnDuration = TurnConstant * degrees;
     MakerSumo.turnRight(TurnSpeed);
@@ -78,7 +82,7 @@ inline void turnRight(int degrees) {
 }
 
 inline void turnLeft(int degrees) {
-    static constexpr float TurnConstant = 5.5;
+    static constexpr float TurnConstant = TURN_CONSTANT;
     static constexpr int TurnSpeed = 50;
     static const int TurnDuration = TurnConstant * degrees;
     MakerSumo.turnLeft(TurnSpeed);
