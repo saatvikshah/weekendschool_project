@@ -1,7 +1,7 @@
 #include "Utilities.h"
 
 void setup() {
-    // Enter estup code here
+    // Enter setup code here
 }
 
 bool do_once() {
@@ -9,5 +9,6 @@ bool do_once() {
 }
 
 void loop() {
+    // Do not modify this function, make all changes in `do_once`
     static bool _ = do_once();
 }

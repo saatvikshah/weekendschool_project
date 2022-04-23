@@ -2,7 +2,6 @@
 
 void setup() {
     begin();
-    delay(seconds(2));
 }
 
 bool do_once() {

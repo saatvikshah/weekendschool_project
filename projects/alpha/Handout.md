@@ -22,13 +22,23 @@ void function() {
 }
 ```
 
+- The Modulo operator(`%`): Simple explanation covered [here](https://www.reddit.com/r/explainlikeimfive/comments/1xws9k/comment/cffanex).
+
+```cpp
+5 % 2 = 1;
+5 % 3 = 2;
+23 % 5 = 3;
+```
+
+- Remember to use the `waitSeconds` to add some time between repetitions if needed to readjust the bot to a good starting position.
+
 ## Levels
 
 Please inform an organizer once you are done with any of the levels. Solutions are to be written out in `projects/alpha/alpha.ino`.
 
 ### Level 1
 
-1. Let's start by ensuring the `begin()` function is called in `setup()` so the bot is completely ready to go.
+1. Let's start by ensuring the `begin()` function is called in `setup()` so the hardware is completely ready to play with.
 2. Now add the ability to play the Mario melody as soon as the robot starts up, but not repeatedly.
 3. Finally get the robot to draw squares that are 3 units long repeatedly. Ensure the core logic to draw a square is in a separate function.
 

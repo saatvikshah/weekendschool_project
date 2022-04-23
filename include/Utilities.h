@@ -14,10 +14,6 @@ int LEDPin = A4;
 
 // Functions
 
-inline void begin() {
-    MakerSumo.begin();
-}
-
 inline void marioMelody() {
     int melodyPitch[] = {NOTE_E5, NOTE_E5, 0, NOTE_E5, 0, NOTE_C5, NOTE_E5, 0, NOTE_G5};
     int melodyDuration[] = {10, 10, 10, 10, 10, 10, 10, 10, 10};
@@ -48,6 +44,11 @@ inline int milliseconds(int value) {
 
 inline void waitSeconds(int value) {
     delay(seconds(value));
+}
+
+inline void begin() {
+    MakerSumo.begin();
+    delay(seconds(2));
 }
 
 inline void resetMotors() {

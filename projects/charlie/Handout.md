@@ -22,13 +22,23 @@ void function() {
 }
 ```
 
+- The Modulo operator(`%`): Simple explanation covered [here](https://www.reddit.com/r/explainlikeimfive/comments/1xws9k/comment/cffanex).
+
+```cpp
+5 % 2 = 1;
+5 % 3 = 2;
+23 % 5 = 3;
+```
+
+- Remember to use the `waitSeconds` to add some time between repetitions if needed to readjust the bot to a good starting position.
+
 ## Levels
 
 Please inform an organizer once you are done with any of the levels. Solutions are to be written out in `projects/alpha/alpha.ino`.
 
 ### Level 1
 
-1. Let's start by ensuring the `begin()` function is called in `setup()` so the bot is completely ready to go.
+1. Let's start by ensuring the `begin()` function is called in `setup()` so the hardware is completely ready to play with.
 2. Turn the LED on.
 3. Now make the robot draw the alphabet 'V' on the ground. Ensure that the LED is on.
 4. Once the drawing is complete, turn the LED off.
@@ -42,4 +52,3 @@ Please inform an organizer once you are done with any of the levels. Solutions a
 ## Extra credit
 
 You have functionality to move, turn, blink LEDs and play music. Can you come up with something interesting to make your robot do. Discuss with your group and the instructors. The most creative group wins a special prize!
-
